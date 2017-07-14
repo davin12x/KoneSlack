@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1A5942821F1979780025A830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5942811F1979780025A830 /* AppDelegate.swift */; };
-		1A5942841F1979780025A830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5942831F1979780025A830 /* ViewController.swift */; };
 		1A5942861F1979780025A830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5942851F1979780025A830 /* Assets.xcassets */; };
 		1A5942891F1979780025A830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5942871F1979780025A830 /* Main.storyboard */; };
+		1A5942951F197BD20025A830 /* ToolbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5942941F197BD20025A830 /* ToolbarVC.swift */; };
+		1A5942971F197BE50025A830 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5942961F197BE50025A830 /* ChannelVC.swift */; };
+		1A5942991F197BFD0025A830 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5942981F197BFD0025A830 /* ChatVC.swift */; };
+		1A59429B1F197D100025A830 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59429A1F197D100025A830 /* MainWindowController.swift */; };
+		1A59429E1F197DBB0025A830 /* ColourConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59429D1F197DBB0025A830 /* ColourConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A59427E1F1979780025A830 /* KoneSlack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoneSlack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5942811F1979780025A830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A5942831F1979780025A830 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A5942851F1979780025A830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A5942881F1979780025A830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A59428A1F1979780025A830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A59428B1F1979780025A830 /* KoneSlack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KoneSlack.entitlements; sourceTree = "<group>"; };
+		1A5942941F197BD20025A830 /* ToolbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarVC.swift; sourceTree = "<group>"; };
+		1A5942961F197BE50025A830 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		1A5942981F197BFD0025A830 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		1A59429A1F197D100025A830 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		1A59429D1F197DBB0025A830 /* ColourConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +61,50 @@
 		1A5942801F1979780025A830 /* KoneSlack */ = {
 			isa = PBXGroup;
 			children = (
+				1A59429C1F197D9E0025A830 /* Utilities */,
+				1A5942931F197B9B0025A830 /* Controller */,
+				1A5942921F197B970025A830 /* View */,
+				1A5942911F197B900025A830 /* Model */,
 				1A5942811F1979780025A830 /* AppDelegate.swift */,
-				1A5942831F1979780025A830 /* ViewController.swift */,
 				1A5942851F1979780025A830 /* Assets.xcassets */,
 				1A5942871F1979780025A830 /* Main.storyboard */,
 				1A59428A1F1979780025A830 /* Info.plist */,
 				1A59428B1F1979780025A830 /* KoneSlack.entitlements */,
 			);
 			path = KoneSlack;
+			sourceTree = "<group>";
+		};
+		1A5942911F197B900025A830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5942921F197B970025A830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A5942931F197B9B0025A830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A5942941F197BD20025A830 /* ToolbarVC.swift */,
+				1A5942961F197BE50025A830 /* ChannelVC.swift */,
+				1A5942981F197BFD0025A830 /* ChatVC.swift */,
+				1A59429A1F197D100025A830 /* MainWindowController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A59429C1F197D9E0025A830 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A59429D1F197DBB0025A830 /* ColourConstants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A5942841F1979780025A830 /* ViewController.swift in Sources */,
+				1A5942991F197BFD0025A830 /* ChatVC.swift in Sources */,
+				1A59429E1F197DBB0025A830 /* ColourConstants.swift in Sources */,
+				1A5942951F197BD20025A830 /* ToolbarVC.swift in Sources */,
+				1A5942971F197BE50025A830 /* ChannelVC.swift in Sources */,
 				1A5942821F1979780025A830 /* AppDelegate.swift in Sources */,
+				1A59429B1F197D100025A830 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
